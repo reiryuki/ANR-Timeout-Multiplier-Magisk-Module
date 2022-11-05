@@ -1,0 +1,1 @@
+# ANR-Timeout-Multiplier-Magisk-Module
