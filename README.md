@@ -25,7 +25,6 @@
 - Android 13 AOSP ROM
 
 ## Credits and contributors
-- https://t.me/viperatmos
 - https://t.me/androidryukimodsdiscussions
 - You can contribute ideas about this Magisk Module here: https://t.me/androidappsportdevelopment
 
