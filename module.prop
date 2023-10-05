@@ -1,7 +1,7 @@
 id=ANRTM
 name=ANR Timeout Multiplier
-version=v0.2
-versionCode=2
+version=v0.3
+versionCode=3
 author=Rei Ryuki the Fixer
 description=Increases ANR (Application Not Responding) timeout annoying pops-up in Android 12 and up.
 

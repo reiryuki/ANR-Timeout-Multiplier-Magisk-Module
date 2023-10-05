@@ -8,7 +8,7 @@
 - Magisk or KernelSU installed
 
 ## Installation Guide & Download Link
-- Install this module https://www.pling.com/p/1933109/ via Magisk app or KernelSU app or Recovery (unless you are using KernelSU)
+- Install this module https://www.pling.com/p/1933109/ via Magisk app or KernelSU app or Recovery if Magisk installed
 
 ## Optionals
 - https://t.me/androidryukimodsdiscussions/120946
@@ -22,15 +22,14 @@
 - If you don't do above, issues will be closed immediately
 
 ## Tested on
-- Android 13 AOSP ROM
-- Android 13 CrDroid ROM
+- Android 13 AOSP ROM & CrDroid ROM
 
 ## Credits and contributors
 - https://t.me/androidryukimodsdiscussions
 - You can contribute ideas about this Magisk Module here: https://t.me/androidappsportdevelopment
 
 ## Thanks for Donations
-- This Magisk Module is always will be free but you can however show us that you are care by making a donations:
+This Magisk Module is always will be free but you can however show us that you are care by making a donations:
 - https://ko-fi.com/reiryuki
 - https://www.paypal.me/reiryuki
 - https://t.me/androidryukimodsdiscussions/2619
