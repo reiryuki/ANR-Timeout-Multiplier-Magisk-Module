@@ -12,10 +12,10 @@
 
 ## Optionals
 - https://t.me/androidryukimodsdiscussions/120946
-- https://t.me/androidryukimodsdiscussions/60861
+- Global: https://t.me/androidryukimodsdiscussions/60861
 
 ## Troubleshootings
-- https://t.me/androidryukimodsdiscussions/29836
+- Global: https://t.me/androidryukimodsdiscussions/29836
 
 ## Support & Bug Report
 - https://t.me/androidryukimodsdiscussions/2618 (Z folder is enough, no need logs)
