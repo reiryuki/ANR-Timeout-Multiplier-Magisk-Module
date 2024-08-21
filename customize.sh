@@ -3,6 +3,7 @@ ui_print " "
 
 # var
 UID=`id -u`
+[ ! "$UID" ] && UID=0
 
 # log
 if [ "$BOOTMODE" != true ]; then
@@ -25,6 +26,13 @@ if [ "`grep_prop debug.log $OPTIONALS`" == 1 ]; then
   ui_print " "
 fi
 
+# recovery
+if [ "$BOOTMODE" != true ]; then
+  MODPATH_UPDATE=`echo $MODPATH | sed 's|modules/|modules_update/|g'`
+  rm -f $MODPATH/update
+  rm -rf $MODPATH_UPDATE
+fi
+
 # info
 MODVER=`grep_prop version $MODPATH/module.prop`
 MODVERCODE=`grep_prop versionCode $MODPATH/module.prop`
@@ -43,22 +51,22 @@ ui_print " "
 
 # check
 FILE=/system/lib*/libinputflinger.so
+NAME=ro.hw_timeout_multiplier
 ui_print "- Checking"
 ui_print "$FILE..."
-if ! grep -q ro.hw_timeout_multiplier $FILE; then
+if ! grep -q $NAME $FILE; then
   abort "  ! Unsupported Android version."
 fi
 ui_print " "
-
 # timeout
 FILE=$MODPATH/system.prop
 PROP=`grep_prop anr.timeout $OPTIONALS`
 if [ "$PROP" ]; then
-  ui_print "- Increases ANR timeout to $PROP x 5 secs."
-  sed -i "s/ro.hw_timeout_multiplier=12/ro.hw_timeout_multiplier=$PROP/g" $FILE
+  ui_print "- Changes ANR timeout to $PROP x 5 secs."
+  sed -i "s|$NAME=12|$NAME=$PROP|g" $FILE
   ui_print " "
 else
-  ui_print "- Increases ANR timeout to 12 x 5 secs."
+  ui_print "- Changes ANR timeout to 12 x 5 secs."
   ui_print " "
 fi
 
