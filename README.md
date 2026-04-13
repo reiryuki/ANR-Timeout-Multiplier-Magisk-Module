@@ -3,12 +3,31 @@
 ## Descriptions
 - Increases ANR (Application Not Responding) timeout annoying pops-up issue in Android 12 (SDK 31) and up.
 
+## Changelog
+
+v0.5
+- Fix conflict with modules_update while installing via recovery if Magisk installed
+
+v0.4
+- Redirect /sdcard to /data/media/"$UID"
+
+v0.3
+- Save install log at /sdcard/..._recovery.log if installing via Recovery
+- Add optional debug.log=1 for more detailed install log
+- Sets ro.arch system property from ro.hardware or ro.product.board if it doesn't exist
+
+v0.2
+- KernelSU support
+
+v0.1
+- Initial release
+
 ## Requirements
 - Android 12 (SDK 31) and up
 - Magisk or Kitsune Mask or KernelSU or Apatch installed
 
 ## Installation Guide & Download Link
-- Install this module https://www.pling.com/p/1933109/ via Magisk app or Kitsune Mask app or KernelSU app or Apatch app or Recovery if Magisk or Kitsune Mask installed
+- Install this module via Magisk app or Kitsune Mask app or KernelSU app or Apatch app or Recovery if Magisk or Kitsune Mask installed
 
 ## Optionals
 - https://t.me/ryukinotes/85
